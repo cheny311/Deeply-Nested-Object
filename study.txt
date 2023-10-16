@@ -1,0 +1,26 @@
+deeply-nested-object research
+
+name: Jessie Chen
+
+subject: Premenstrual syndrome
+
+description: there are times that I feel like a marionette that control by hormone. I am controlled by emotions, pains, sores, and each cycle repeat over and over. 
+
+research layout
+
+1. uncontrollable 
+	- acne
+	- appetite
+    - sadness
+    - pains
+    - tears
+
+2. to be more specfic
+	- description of the pains, emotions, what it have impact on my daily performance
+	
+3. after
+	- cramp
+	- endless cycle
+	
+
+duration of research: 1 week?
