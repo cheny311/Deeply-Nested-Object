@@ -64,8 +64,7 @@ if (!isNaN(currentDay)) {
 } else {
     console.log("Invalid day");
 }
-var currentDayInput = prompt("请输入一个数字作为当前日期：");
-var currentDay = parseInt(currentDayInput);
+
 
 
 
