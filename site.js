@@ -1,5 +1,5 @@
 //function created by chatgpt, after checking the current day, i want to have a fucntion that tells the user what kind of mood they mighe experience but i am still not sure after chatgpt generated the code
-var person ={
+let person ={
     firstname: "Jessie",
     lastname: "Chen",
     age: 21,
@@ -49,13 +49,13 @@ var person ={
         }
     }
 }
-var currentDayInput = prompt("please enter a number from 0-27 to check your stage:");
+let currentDayInput = prompt("please enter a number from 0-27 to check your stage:");
 
 
-var currentDay = parseInt(currentDayInput);
+let currentDay = parseInt(currentDayInput);
 
 if (!isNaN(currentDay)) {
-    var currentStage = person.getCurrentStage(currentDay);
+    let currentStage = person.getCurrentStage(currentDay);
     if (currentStage === "Invalid day") {
         console.log("Invalid day");
     } else {
