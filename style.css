@@ -29,6 +29,7 @@ input, button {
 }
 
 .menparent {
+    
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -37,7 +38,8 @@ input, button {
    
     }
     
-    .mdiv1 { grid-area: 1 / 1 / 2 / 2; }
+    .mdiv1 { grid-area: 1 / 1 / 2 / 2; 
+    }
     .mdiv2 { grid-area: 2 / 2 / 3 / 3; }
     .mdiv3 { grid-area: 3 / 1 / 4 / 2; }
     .mdiv4 { grid-area: 5 / 4 / 6 / 5; }
@@ -50,7 +52,13 @@ input, button {
     
     .mdiv1-custom img,
     .mdiv2-custom img {
+
         display: block;
+    }
+
+    .mdiv1 img, .mdiv2 img, .mdiv3 img, .mdiv4 img, .mdiv5 img {
+        display: none;
+        border-radius: 5%;
     }
     
 .foparent {
@@ -78,6 +86,10 @@ input, button {
         .fdiv2-custom img {
             display: block;
         }
+        .fdiv1 img, .fdiv2 img, .fdiv3 img, .fdiv4 img, .fdiv5 img {
+            display: none;
+            border-radius: 5%;
+        }
    
  .oparent {
             display: grid;
@@ -104,6 +116,10 @@ input, button {
             .odiv2-custom img {
                 display: block;
             }
+            .odiv1 img, .odiv2 img, .odiv3 img, .odiv4 img, .odiv5 img {
+                display: none;
+                border-radius: 5%;
+            }
             .luparent {
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
@@ -129,4 +145,7 @@ input, button {
                 .ldiv2-custom img {
                     display: block;
                 }
-                 
+                .ldiv1 img, .ldiv2 img, .ldiv3 img, .ldiv4 img, .ldiv5 img {
+                    display: none;
+                    border-radius: 5%;
+                }
