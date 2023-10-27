@@ -6,90 +6,109 @@
     <link rel="stylesheet" href="style.css" />
     <script src="site.js" defer></script>
     <title>PMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Sometype+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="textContainer">
-        <label for="currentDayInput"> Enter a number from 0-27 to check your stage:</label>
-        <input type="text" id="currentDayInput" />
-        <button onclick="checkStage()">Check Stage</button>
-        <p id="result"></p>
-      </div>
+    <div class="background">
+      <div class="container">
+        <div class="textContainer">
+          <label for="currentDayInput">
+            Enter a number from 0-26 to check your stage:</label
+          >
+          <input type="text" id="currentDayInput" />
+          <button onclick="checkStage()">Check Stage</button>
+          <p id="result"></p>
+        </div>
 
-      <div class="menparent">
-        <div class="mdiv1">
-          <img src="img/bige.jpeg" alt="Image 1" />
+        <div class="menparent">
+          <div class="mdiv1">
+            <img src="img/bige.jpeg" alt="Image 1" />
+          </div>
+          <div class="mdiv2">
+            <img src="img/bige.jpeg" alt="Image 2" />
+          </div>
+          <div class="mdiv3">
+            <img src="img/bige.jpeg" alt="Image 3" />
+          </div>
+          <div class="mdiv4">
+            <img src="img/bige.jpeg" alt="Image 4" />
+          </div>
+          <div class="mdiv5">
+            <img src="img/bige.jpeg" alt="Image 5" />
+          </div>
         </div>
-        <div class="mdiv2">
-          <img src="img/bige.jpeg" alt="Image 2" />
+
+        <div class="foparent">
+          <div class="fdiv1">
+            <img src="img/bige2.jpeg" alt="Image 1" />
+          </div>
+          <div class="fdiv2">
+            <img src="img/bige2.jpeg" alt="Image 2" />
+          </div>
+          <div class="fdiv3">
+            <img src="img/bige2.jpeg" alt="Image 3" />
+          </div>
+          <div class="fdiv4">
+            <img src="img/bige2.jpeg" alt="Image 4" />
+          </div>
+          <div class="fdiv5">
+            <img src="img/bige2.jpeg" alt="Image 5" />
+          </div>
         </div>
-        <div class="mdiv3">
-          <img src="img/bige.jpeg" alt="Image 3" />
+
+        <div class="oparent">
+          <div class="odiv1">
+            <img src="img/bige4.jpeg" alt="Image 1" />
+          </div>
+          <div class="odiv2">
+            <img src="img/bige4.jpeg" alt="Image 2" />
+          </div>
+          <div class="odiv3">
+            <img src="img/bige4.jpeg" alt="Image 3" />
+          </div>
+          <div class="odiv4">
+            <img src="img/bige4.jpeg" alt="Image 4" />
+          </div>
+          <div class="odiv5">
+            <img src="img/bige4.jpeg" alt="Image 5" />
+          </div>
         </div>
-        <div class="mdiv4">
-          <img src="img/bige.jpeg" alt="Image 4" />
-        </div>
-        <div class="mdiv5">
-          <img src="img/bige.jpeg" alt="Image 5" />
+        <div class="luparent">
+          <div class="ldiv1">
+            <img src="img/bige3.jpeg" alt="Image 1" />
+          </div>
+          <div class="ldiv2">
+            <img src="img/bige3.jpeg" alt="Image 2" />
+          </div>
+          <div class="ldiv3">
+            <img src="img/bige3.jpeg" alt="Image 3" />
+          </div>
+          <div class="ldiv4">
+            <img src="img/bige3.jpeg" alt="Image 4" />
+          </div>
+          <div class="ldiv5">
+            <img src="img/bige3.jpeg" alt="Image 5" />
+          </div>
         </div>
       </div>
-
-
-      <div class="foparent">
-        <div class="fdiv1">
-          <img src="img/bige2.jpeg" alt="Image 1" />
-        </div>
-        <div class="fdiv2">
-          <img src="img/bige2.jpeg" alt="Image 2" />
-        </div>
-        <div class="fdiv3">
-          <img src="img/bige2.jpeg" alt="Image 3" />
-        </div>
-        <div class="fdiv4">
-          <img src="img/bige2.jpeg" alt="Image 4" />
-        </div>
-        <div class="fdiv5">
-          <img src="img/bige2.jpeg" alt="Image 5" />
-        </div>
+      <div class="article">
+        <div class="text"></div>
       </div>
-
-      <div class="oparent">
-        <div class="odiv1">
-          <img src="img/bige4.jpeg" alt="Image 1" />
-        </div>
-        <div class="odiv2">
-          <img src="img/bige4.jpeg" alt="Image 2" />
-        </div>
-        <div class="odiv3">
-          <img src="img/bige4.jpeg" alt="Image 3" />
-        </div>
-        <div class="odiv4">
-          <img src="img/bige4.jpeg" alt="Image 4" />
-        </div>
-        <div class="odiv5">
-          <img src="img/bige4.jpeg" alt="Image 5" />
-        </div>
+      <div class="fish">
+        <img src="img/jinyu.svg" alt="jinyu" />
       </div>
-      <div class="luparent">
-        <div class="ldiv1">
-          <img src="img/bige3.jpeg" alt="Image 1" />
-        </div>
-        <div class="ldiv2">
-          <img src="img/bige3.jpeg" alt="Image 2" />
-        </div>
-        <div class="ldiv3">
-          <img src="img/bige3.jpeg" alt="Image 3" />
-        </div>
-        <div class="ldiv4">
-          <img src="img/bige3.jpeg" alt="Image 4" />
-        </div>
-        <div class="ldiv5">
-          <img src="img/bige3.jpeg" alt="Image 5" />
-        </div>
-      </div>
-
-      
+      <div class="flottingbox">
+        <span class="text1" data-tooltip="我说">月经期是一家很烦人的事情，你可能觉得烦躁</span>
+        <span class="text2" data-tooltip="我说">卵泡期一般，我对这个世界已经麻木了</span>
+        <span class="text3" data-tooltip="我说">排卵期的我想要拥抱全世界</span>
+        <span class="text4" data-tooltip="我说">月经前的我每天都想自杀</span>
     </div>
     
+    </div>
   </body>
 </html>

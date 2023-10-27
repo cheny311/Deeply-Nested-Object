@@ -2,7 +2,22 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    font-family: 'Sometype Mono', monospace;
+
 }
+
+.background {
+    background-image: url('background.png');
+    /* 设置背景图片的路径 */
+    background-size: cover;
+    /* 让背景图片充满整个 .background 元素 */
+    background-repeat: repeat-y;
+    /* 防止背景图片重复 */
+    height: 540vh;
+    /* 设置 .background 元素的高度为视口高度，使背景充满整个屏幕 */
+    opacity: 95%;
+}
+
 
 img {
     width: 100%;
@@ -21,131 +36,244 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    margin-top: 240px;
+    margin-top: 340px;
 }
 
-input, button {
+input,
+button {
     margin: 10px;
 }
 
 .menparent {
-    
+
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-   
-    }
-    
-    .mdiv1 { grid-area: 1 / 1 / 2 / 2; 
-    }
-    .mdiv2 { grid-area: 2 / 2 / 3 / 3; }
-    .mdiv3 { grid-area: 3 / 1 / 4 / 2; }
-    .mdiv4 { grid-area: 5 / 4 / 6 / 5; }
-    .mdiv5 { grid-area: 2 / 4 / 3 / 5; }
 
-    .mdiv1 img {
+}
 
-        display: none;
-    }
-    
-    .mdiv1-custom img,
-    .mdiv2-custom img {
+.mdiv1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
 
-        display: block;
-    }
+.mdiv2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
 
-    .mdiv1 img, .mdiv2 img, .mdiv3 img, .mdiv4 img, .mdiv5 img {
-        display: none;
-        border-radius: 5%;
-    }
-    
+.mdiv3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.mdiv4 {
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+.mdiv5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.mdiv1 img {
+
+    display: none;
+}
+
+.mdiv1-custom img,
+.mdiv2-custom img {
+
+    display: block;
+}
+
+.mdiv1 img,
+.mdiv2 img,
+.mdiv3 img,
+.mdiv4 img,
+.mdiv5 img {
+    display: none;
+    border-radius: 5%;
+}
+
 .foparent {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-       
-        }
-        
- .fdiv1 { grid-area: 4 / 5 / 5 / 6; }
- .fdiv2 { grid-area: 3 / 1 / 4 / 2; }
- .fdiv3 { grid-area: 1 / 2 / 2 / 3; }
- .fdiv4 { grid-area: 5 / 3 / 6 / 4; }
- .fdiv5 { grid-area: 2 / 4 / 3 / 5; }
-    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.fdiv1 {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+.fdiv2 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.fdiv3 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.fdiv4 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.fdiv5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
 
 .fdiv1 img {
-    
-            display: none;
-        }
-        
-        .fdiv1-custom img,
-        .fdiv2-custom img {
-            display: block;
-        }
-        .fdiv1 img, .fdiv2 img, .fdiv3 img, .fdiv4 img, .fdiv5 img {
-            display: none;
-            border-radius: 5%;
-        }
-   
- .oparent {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-           
-            }
-            
-            .odiv1 { grid-area: 4 / 5 / 5 / 6; }
-            .odiv2 { grid-area: 3 / 1 / 4 / 2; }
-            .odiv3 { grid-area: 1 / 2 / 2 / 3; }
-            .odiv4 { grid-area: 5 / 3 / 6 / 4; }
-            .odiv5 { grid-area: 2 / 4 / 3 / 5; }
-        
-    
-            .odiv1 img {
-        
-                display: none;
-            }
-            
-            .odiv1-custom img,
-            .odiv2-custom img {
-                display: block;
-            }
-            .odiv1 img, .odiv2 img, .odiv3 img, .odiv4 img, .odiv5 img {
-                display: none;
-                border-radius: 5%;
-            }
-            .luparent {
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-rows: repeat(6, 1fr);
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-               
-                }
-                
-                .ldiv1 { grid-area: 4 / 5 / 5 / 6; }
-                .ldiv2 { grid-area: 3 / 1 / 4 / 2; }
-                .ldiv3 { grid-area: 1 / 2 / 2 / 3; }
-                .ldiv4 { grid-area: 5 / 3 / 6 / 4; }
-                .ldiv5 { grid-area: 2 / 4 / 3 / 5; }
-            
-        
-                .ldiv1 img {
-            
-                    display: none;
-                }
-                
-                .ldiv1-custom img,
-                .ldiv2-custom img {
-                    display: block;
-                }
-                .ldiv1 img, .ldiv2 img, .ldiv3 img, .ldiv4 img, .ldiv5 img {
-                    display: none;
-                    border-radius: 5%;
-                }
+
+    display: none;
+}
+
+.fdiv1-custom img,
+.fdiv2-custom img {
+    display: block;
+}
+
+.fdiv1 img,
+.fdiv2 img,
+.fdiv3 img,
+.fdiv4 img,
+.fdiv5 img {
+    display: none;
+    border-radius: 5%;
+}
+
+.oparent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.odiv1 {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+.odiv2 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.odiv3 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.odiv4 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.odiv5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+
+.odiv1 img {
+
+    display: none;
+}
+
+.odiv1-custom img,
+.odiv2-custom img {
+    display: block;
+}
+
+.odiv1 img,
+.odiv2 img,
+.odiv3 img,
+.odiv4 img,
+.odiv5 img {
+    display: none;
+    border-radius: 5%;
+}
+
+.luparent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.ldiv1 {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+.ldiv2 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.ldiv3 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.ldiv4 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.ldiv5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+
+.ldiv1 img {
+
+    display: none;
+}
+
+.ldiv1-custom img,
+.ldiv2-custom img {
+    display: block;
+}
+
+.ldiv1 img,
+.ldiv2 img,
+.ldiv3 img,
+.ldiv4 img,
+.ldiv5 img {
+    display: none;
+    border-radius: 5%;
+}
+
+.article-text {
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+
+}
+
+.article-text::-webkit-scrollbar {
+    display: none;
+}
+
+/* 样式化 .fish */
+.fish {
+    position: absolute;
+
+    width: 100px;
+    /* 设置宽度 */
+    height: 100px;
+    /* 设置高度 */
+}
+
+/* 控制图像 */
+.fish img {
+    width: 100%;
+    /* 让图像充满 .fish 元素 */
+    height: 100%;
+    /* 让图像充满 .fish 元素 */
+    fill: blue;
+    /* 如果 SVG 允许填充颜色，将其设置为蓝色 */
+}
+
