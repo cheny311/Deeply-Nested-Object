@@ -12,9 +12,8 @@ body {
     background-size: cover;
     /* 让背景图片充满整个 .background 元素 */
     background-repeat: repeat-y;
-    /* 防止背景图片重复 */
+ 
     height: 540vh;
-    /* 设置 .background 元素的高度为视口高度，使背景充满整个屏幕 */
     opacity: 95%;
 }
 
@@ -59,7 +58,7 @@ button {
 }
 
 .mdiv2 {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 3 / 3 / 4 / 4;
 }
 
 .mdiv3 {
@@ -277,3 +276,21 @@ button {
     /* 如果 SVG 允许填充颜色，将其设置为蓝色 */
 }
 
+.flottingbox{
+    color: bisque;
+    display:none
+}
+.text1, .text2, .text3, .text4 {
+    font-weight: 600;
+    color: aquamarine;
+    font-size: 250px;
+    display: none;
+}
+/* 定义Mood内容容器的样式 */
+.mood-content {
+    display: none; /* 初始状态下不可见 */
+    color: #ff5733; /* 设置文字颜色 */
+    font-size: 16px; /* 设置文字大小 */
+    margin-top: 10px; /* 设置上外边距，根据需要进行调整 */
+  }
+  

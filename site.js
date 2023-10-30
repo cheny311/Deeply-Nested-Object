@@ -1,5 +1,5 @@
 const article = {
-  text: "Slightly elevated from street level, visitors have the immediate feeling of leaving the city behind. Seventeen honey locust trees form a natural canopy over the site and the park’s walls are draped in flowing, green ivy. Seasonal flowers create an inviting garden feel, far removed from the surrounding desert of concrete and steel. Instead of conventional park benches, there are 20 tables, designed by Eero Saarinen, and 60 modern-style Henry Bertoia chairs. There is also a refreshment stand. Paley Park’s centerpiece is its magnificent 20-foot high “waterwall” which provides not only a background of captivating sight and sound, but also mutes the background noise of the city. The combined effect creates what The New York Times has called “a place of unparalleled serenity.” Paley Park has demonstrated that small urban areas can serve as both a popular meeting spot and an inviting place for relaxation and calm reflection, adding to the delight and vitality of urban living. As a “vest-pocket park”, Paley Park has served as inspiration for similar ventures in New York City and around the world. Paley Park is owned and operated by The Greenpark Foundation, Inc. and is supported by William S. Paley Foundation, Inc. For more on the history of CBS and the media industry, visit The Paley Center for Media on 52nd Street between Fifth and Sixth Avenues. Shortly after the park opened in 1967, Mr. Paley stated that “as a New Yorker, I have long been convinced that, in the midst of all this building, we ought to set aside occasional spots of open space where our residents and visitors can sit and enjoy themselves as they pause in their day’s activities. When I was casting about for an appropriate way to create a memorial to my father, it occurred to me that to provide one such area in the very center of our greatest city would be the kind of memorial that would have pleased him most.”",
+  text: "The median number of lifetime menstrual cycles was 451.3, corresponding to 34.7 years of menstrual activity if considering an average of 13 cycles per year. And each time, my emotional and physical stages are highly affected by these changes。I'm always being affected by my menstrual cycle. On different days of the month, my body reacts to different periods. For example, the week before my period, I'm like a skeleton, I can't take an interest in anything, and the slightest thing can make my eyes water non-stop. I just lay in bed and my tears fall. It also involuntarily flowed down when I ate, making me feel that no matter what kind of food I ate, it had a disgusting taste. I also experience different bloating and constipation during this period. I agonized over why my digestive system was always tormenting me and felt like all the emotions and food residue were clogging up my body. They don't know what to do like I do, and don't know exactly where the exit is. What bugged me the most were the pimples created by all the hormonal disorders and I could look for them anywhere. Sometimes just rolling over I find the pain caused by pressing into a pimple. I hate these things because even if they disappear they carry a lot of marks with them and these marks make me more miserable. After this, my period came, with cramps, headaches and diarrhea that often made me question why it had to be me. Every time I go through a period like this, I feel deeply fucked. Of course, there are times in my menstrual cycle that make me feel in good shape, like ovulation. During this period I feel as though there will always be something to look forward to in life, but after the blip, I feel like I'm drowning in deep pain again. ",
 };
 
 
@@ -97,7 +97,7 @@ function checkStage() {
     let currentStage = person.getCurrentStage(currentDay);
     resultElement.textContent = "Current stage: " + currentStage;
     let textToDisplay = "";
-    // 隐藏所有mdiv1和mdiv2中的图片
+  
     document
       .querySelectorAll(".mdiv1 img")
       .forEach((img) => (img.style.display = "none"));
@@ -114,52 +114,63 @@ function checkStage() {
       .querySelectorAll(".mdiv5 img")
       .forEach((img) => (img.style.display = "none"));
 
-    // 隐藏所有foparent中的图片
+  
     foparentElements.forEach((div) => {
       div.querySelector("img").style.display = "none";
     });
 
-    // 隐藏所有oparent中的图片
+  
     oparentElements.forEach((div) => {
       div.querySelector("img").style.display = "none";
     });
 
-    // 隐藏所有luparent中的图片
+    
     luparentElements.forEach((div) => {
       div.querySelector("img").style.display = "none";
     });
 
     if (currentDay >= 0 && currentDay <= 2) {
-      bodyElement.style.backgroundColor = "green";
-      textToDisplay = document.querySelector(".text1").textContent;
-      // 当天数在0-2之间时，显示menparent中的图片
+      // bodyElement.style.backgroundColor = "green";
+    
+      let text1Element = document.querySelector(".text1");
+      text1Element.style.display = "block";
+      textToDisplay = text1Element.textContent;
       divElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
       });
+      
+      
     } else if (currentDay >= 3 && currentDay <= 7) {
-      bodyElement.style.backgroundColor = "red";
-      textToDisplay = document.querySelector(".text2").textContent;
-      // 当天数在3-7之间时，显示foparent中的图片
+      
+     
+      let text2Element = document.querySelector(".text2");
+  text2Element.style.display = "block";
+  textToDisplay = text2Element.textContent;
       foparentElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
+
       });
     } else if (currentDay >= 8 && currentDay <= 11) {
-      bodyElement.style.backgroundColor = "blue";
-      textToDisplay = document.querySelector(".text3").textContent;
-      // 当天数在8-11之间时，显示oparent中的图片
+     
+     
+      let text2Element = document.querySelector(".text3");
+      text2Element.style.display = "block";
+      textToDisplay = text2Element.textContent;
       oparentElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
       });
     } else if (currentDay >= 12 && currentDay <= 26) {
-      bodyElement.style.backgroundColor = "yellow";
-      textToDisplay = document.querySelector(".text4").textContent;
-      // 当天数在12-26之间时，显示luparent中的图片
+      
+     
+      let text2Element = document.querySelector(".text4");
+      text2Element.style.display = "block";
+      textToDisplay = text2Element.textContent;
       luparentElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
       });
     }
 
-    // 添加/删除mdiv1-custom类
+  
     if (currentDay === 0) {
       divElements[0].classList.add("mdiv1-custom");
       divElements[1].classList.add("mdiv2-custom");
@@ -167,8 +178,18 @@ function checkStage() {
       divElements[0].classList.remove("mdiv1-custom");
       divElements[1].classList.remove("mdiv2-custom");
     }
+
   } else {
     resultElement.textContent = "Invalid day";
     bodyElement.style.backgroundColor = null;
   }
+  document.querySelector(".article .text").textContent = textToDisplay;
+
 }
+
+
+
+
+
+
+
