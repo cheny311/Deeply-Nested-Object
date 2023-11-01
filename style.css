@@ -12,7 +12,7 @@ body {
     background-size: cover;
     /* 让背景图片充满整个 .background 元素 */
     background-repeat: repeat-y;
- 
+
     height: 540vh;
     opacity: 95%;
 }
@@ -276,21 +276,29 @@ button {
     /* 如果 SVG 允许填充颜色，将其设置为蓝色 */
 }
 
-.flottingbox{
+.flottingbox {
     color: bisque;
-    display:none
+    display: none
 }
-.text1, .text2, .text3, .text4 {
+
+.text1,
+.text2,
+.text3,
+.text4 {
     font-weight: 600;
     color: aquamarine;
     font-size: 250px;
     display: none;
 }
+
 /* 定义Mood内容容器的样式 */
 .mood-content {
-    display: none; /* 初始状态下不可见 */
-    color: #ff5733; /* 设置文字颜色 */
-    font-size: 16px; /* 设置文字大小 */
-    margin-top: 10px; /* 设置上外边距，根据需要进行调整 */
-  }
-  
+    display: none;
+    /* 初始状态下不可见 */
+    color: #ff5733;
+    /* 设置文字颜色 */
+    font-size: 16px;
+    /* 设置文字大小 */
+    margin-top: 10px;
+    /* 设置上外边距，根据需要进行调整 */
+}
