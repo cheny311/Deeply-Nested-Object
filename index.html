@@ -1,117 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="site.js" defer></script>
-    <title>PMS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Sometype+Mono&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="background">
-      <div class="container">
-        <div class="textContainer">
-          <label for="currentDayInput">
-            Enter a number from 0-26 to check your stage:</label
-          >
-          <input type="text" id="currentDayInput" />
-          <button onclick="checkStage()">Check Stage</button>
-          <p id="result"></p>
-        </div>
 
-        <div class="menparent">
-          <div class="mdiv1">
-            <img src="img/men1.png" alt="Image 1" />
-          </div>
-          <div class="mdiv2">
-            <img src="img/men2.png" alt="Image 2" />
-          </div>
-          <div class="mdiv3">
-            <img src="img/men3.png" alt="Image 3" />
-          </div>
-          <div class="mdiv4">
-            <img src="img/men4.png" alt="Image 4" />
-          </div>
-          <div class="mdiv5">
-            <img src="img/bige.jpeg" alt="Image 5" />
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="site.js" defer></script>
+  <title>PMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Sometype+Mono&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div class="foparent">
-          <div class="fdiv1">
-            <img src="img/f1.png" alt="Image 1" />
-          </div>
-          <div class="fdiv2">
-            <img src="img/f2.png" alt="Image 2" />
-          </div>
-          <div class="fdiv3">
-            <img src="img/f3.png" alt="Image 3" />
-          </div>
-          <div class="fdiv4">
-            <img src="img/bige2.jpeg" alt="Image 4" />
-          </div>
-          <div class="fdiv5">
-            <img src="img/bige2.jpeg" alt="Image 5" />
-          </div>
-        </div>
-
-        <div class="oparent">
-          <div class="odiv1">
-            <img src="img/o1.png" alt="Image 1" />
-          </div>
-          <div class="odiv2">
-            <img src="img/o2.png" alt="Image 2" />
-          </div>
-          <div class="odiv3">
-            <img src="img/bige4.jpeg" alt="Image 3" />
-          </div>
-          <div class="odiv4">
-            <img src="img/bige4.jpeg" alt="Image 4" />
-          </div>
-          <div class="odiv5">
-            <img src="img/bige4.jpeg" alt="Image 5" />
-          </div>
-        </div>
-        <div class="luparent">
-          <div class="ldiv1">
-            <img src="img/l1.png" alt="Image 1" />
-          </div>
-          <div class="ldiv2">
-            <img src="img/l2.png" alt="Image 2" />
-          </div>
-          <div class="ldiv3">
-            <img src="img/l3.png" alt="Image 3" />
-          </div>
-          <div class="ldiv4">
-            <img src="img/l4.png" alt="Image 4" />
-          </div>
-          <div class="ldiv5">
-            <img src="img/bige3.jpeg" alt="Image 5" />
-          </div>
-        </div>
-      </div>
-      <div class="article">
-        <div class="text"></div>
-      </div>
-      <div class="fish">
-        <img src="img/jinyu.svg" alt="jinyu" />
-      </div>
-      <div class="flottingbox">
-        <span class="text1" data-tooltip="我说">月经很烦人，黏腻的下半身，疼痛，烦躁</span>
-        
-      </div>
-      
-        <span class="text2" data-tooltip="我说">卵泡期的时候，感觉对这个世界已经麻木了</span>
-        <span class="text3" data-tooltip="我说">排卵期的时候，我想要拥抱全世界</span>
-        <span class="text4" data-tooltip="我说">月经前的每一天，都像是有一层雾把我和这个世界隔开</span>
+<body>
+  <div class="background">
+    <div class="diamond-container">
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
     </div>
-    
+
+    <div class="container">
+  
+      <div class="textContainer">
+        <label for="currentDayInput">
+          Enter a number from 0-26 to check your stage:</label>
+        <input type="text" id="currentDayInput" />
+        <button onclick="checkStage()">Check Stage</button>
+        <p id="result"></p>
+      </div>
+  
+      <div class="menparent">
+        <div class="mdiv1">
+          <img src="img/men1.png" alt="Image 1" />
+        </div>
+        <div class="mdiv2">
+          <img src="img/men2.png" alt="Image 2" />
+        </div>
+        <div class="mdiv3">
+          <img src="img/men3.png" alt="Image 3" />
+        </div>
+        <div class="mdiv4">
+          <img src="img/men4.png" alt="Image 4" />
+        </div>
+        <div class="mdiv5">
+          <img src="img/bige.jpeg" alt="Image 5" />
+        </div>
+      </div>
+
+      <div class="foparent">
+        <div class="fdiv1">
+          <img src="img/f1.png" alt="Image 1" />
+        </div>
+        <div class="fdiv2">
+          <img src="img/f2.png" alt="Image 2" />
+        </div>
+        <div class="fdiv3">
+          <img src="img/f3.png" alt="Image 3" />
+        </div>
+        <div class="fdiv4">
+          <img src="img/bige2.jpeg" alt="Image 4" />
+        </div>
+        <div class="fdiv5">
+          <img src="img/bige2.jpeg" alt="Image 5" />
+        </div>
+      </div>
+
+      <div class="oparent">
+        <div class="odiv1">
+          <img src="img/o1.png" alt="Image 1" />
+        </div>
+        <div class="odiv2">
+          <img src="img/o2.png" alt="Image 2" />
+        </div>
+        <div class="odiv3">
+          <img src="img/bige4.jpeg" alt="Image 3" />
+        </div>
+        <div class="odiv4">
+          <img src="img/bige4.jpeg" alt="Image 4" />
+        </div>
+        <div class="odiv5">
+          <img src="img/bige4.jpeg" alt="Image 5" />
+        </div>
+      </div>
+      <div class="luparent">
+        <div class="ldiv1">
+          <img src="img/l1.png" alt="Image 1" />
+        </div>
+        <div class="ldiv2">
+          <img src="img/l2.png" alt="Image 2" />
+        </div>
+        <div class="ldiv3">
+          <img src="img/l3.png" alt="Image 3" />
+        </div>
+        <div class="ldiv4">
+          <img src="img/l4.png" alt="Image 4" />
+        </div>
+        <div class="ldiv5">
+          <img src="img/bige3.jpeg" alt="Image 5" />
+        </div>
+      </div>
     </div>
-  </body>
+    <div class="article">
+      <div class="article_text"></div>
+    </div>
+    <div class="fish">
+      <img src="img/jinyu.svg" alt="jinyu" />
+    </div>
+   
+    <span class="text1" data-tooltip="我说">月经很烦人，黏腻的下半身，疼痛，烦躁</span>
+    <span class="text2" data-tooltip="我说">卵泡期的时候，感觉对这个世界已经麻木了</span>
+    <span class="text3" data-tooltip="我说">排卵期的时候，我想要拥抱全世界</span>
+    <span class="text4" data-tooltip="我说">月经前的每一天，都像是有一层雾把我和这个世界隔开</span>
+  </div>
+
+  </div>
+</body>
+
 </html>

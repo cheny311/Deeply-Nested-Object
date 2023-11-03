@@ -8,26 +8,20 @@ body {
 
 .background {
     background-image: url('background.png');
-    /* 设置背景图片的路径 */
     background-size: cover;
-    /* 让背景图片充满整个 .background 元素 */
     background-repeat: repeat-y;
-
     height: 540vh;
-    opacity: 95%;
+
 }
 
 
 img {
+
     width: 100%;
 }
 
 .container {
-    /* position: absolute; */
-    /* width: 100%; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+   
 }
 
 .textContainer {
@@ -40,11 +34,15 @@ img {
 
 input,
 button {
+
+    font-weight: bolder;
+    background-color: bisque;
+    box-shadow: 5px 5px 10px 10px #6d6df580;
     margin: 10px;
 }
 
 .menparent {
-
+    margin-top: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -269,11 +267,12 @@ button {
 /* 控制图像 */
 .fish img {
     width: 100%;
-    /* 让图像充满 .fish 元素 */
+   
     height: 100%;
-    /* 让图像充满 .fish 元素 */
+  
     fill: blue;
-    /* 如果 SVG 允许填充颜色，将其设置为蓝色 */
+filter: brightness(150%)saturate(200%);
+
 }
 
 .flottingbox {
@@ -301,4 +300,33 @@ button {
     /* 设置文字大小 */
     margin-top: 10px;
     /* 设置上外边距，根据需要进行调整 */
+}
+.diamond-container {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); /* 同时进行平移和旋转 */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 160px;
+}
+
+.diamond {
+    width: 80px;
+    height: 60px;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid rgb(255, 224, 224);
+    box-shadow: 5px 5px 10px 10px #c3f56d80;
+    animation: float 4s infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-70%, -50%) rotate(0deg) translateY(0) scale(1);
+    }
+    100% {
+        transform: translate(-10%, -150%) rotate(85deg) translateY(80px) scale(2);
+    }
 }
