@@ -75,7 +75,7 @@ let person = {
   luteal: {
     mood: ["Low mood", "Sad", "Irritable"],
     waterRetention: ["eyelids", "fingers", "butt"],
-    consitipation: ["gas", "flatulence"],
+    constipation: ["diaheara", "flatulence","gas"],
     acnes: ["forehead", "cheeks", "jaw"],
     brainFog: ["low producivities", "dizziness"],
     appetiteOverEating: true,
@@ -245,10 +245,9 @@ function checkStage() {
     // so the stage result is only used to change only one webpage text element
     // and we got a if else entry here to check if we want to show other text elements
    //each of the stage will result in different output for the displaying text
-    if (currentDay >= 0 && currentDay <= 2) {
-      // bodyElement.style.backgroundColor = "green";
 
-      // not need to explain here i guess
+    if (currentDay >= 0 && currentDay <= 2) {
+    
       let text1Element = document.querySelector(".text1");
       text1Element.style.display = "block";
       divElements.forEach((div) => {
@@ -268,16 +267,15 @@ function checkStage() {
     } else if (currentDay >= 8 && currentDay <= 11) {
 
 
-      let text2Element = document.querySelector(".text3");
-      text2Element.style.display = "block";
+      let text3Element = document.querySelector(".text3");
+      text3Element.style.display = "block";
       oparentElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
       });
     } else if (currentDay >= 12 && currentDay <= 26) {
 
-
-      let text2Element = document.querySelector(".text4");
-      text2Element.style.display = "block";
+      let text4Element = document.querySelector(".text4");
+      text4Element.style.display = "block";
       luparentElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
       });

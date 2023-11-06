@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -10,7 +10,7 @@ body {
     background-image: url('background.png');
     background-size: cover;
     background-repeat: repeat-y;
-    height: 540vh;
+    height: 840vh;
 
 }
 
@@ -254,17 +254,16 @@ button {
     display: none;
 }
 
-/* 样式化 .fish */
-.fish {
-    position: absolute;
 
-    width: 100px;
-    /* 设置宽度 */
-    height: 100px;
-    /* 设置高度 */
+.fish {
+    position: relative;
+  transform: translate(550%,5%);
+    width: 200px;
+    height: 200px;
+   
 }
 
-/* 控制图像 */
+
 .fish img {
     width: 100%;
    
@@ -290,17 +289,7 @@ filter: brightness(150%)saturate(200%);
     display: none;
 }
 
-/* 定义Mood内容容器的样式 */
-.mood-content {
-    display: none;
-    /* 初始状态下不可见 */
-    color: #ff5733;
-    /* 设置文字颜色 */
-    font-size: 16px;
-    /* 设置文字大小 */
-    margin-top: 10px;
-    /* 设置上外边距，根据需要进行调整 */
-}
+
 .diamond-container {
     position: absolute;
     top: 130%;
