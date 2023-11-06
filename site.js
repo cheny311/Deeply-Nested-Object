@@ -30,15 +30,19 @@ document.querySelector(".article").innerHTML = article.text;
 // i want to have a fucntion that tells the user what kind of mood they might experience 
 // but i am still not sure after chatgpt generated the code
 let person = {
-  // why these variables are here, not in use at all, where to put it???
+  
   firstname: "Jessie",
   lastname: "Chen",
   age: 21,
-  // so stupid to have a list here, stupid gpt, 4 different words, but a long list...
+
   menstrualCycle: [
     "Menstrual",
     "Menstrual",
     "Menstrual",
+    "Menstrual",
+    "Menstrual",
+    "Menstrual",
+     "Menstrual",
     "Follicular",
     "Follicular",
     "Follicular",
@@ -58,10 +62,7 @@ let person = {
     "Luteal",
     "Luteal",
     "Luteal",
-    "Luteal",
-    "Luteal",
-    "Luteal",
-    "Luteal",
+    "Luteal"
   ],
 
  
@@ -160,12 +161,14 @@ function convertDetailToString(detail) {
 //check for cramp
   if ('cramp' in detail) {
     //inputing the detail in preset words and how it will present on the page
+   //combine the previous inforamtion wuth text and then update for each stage
     detailString += 'mood: ' + detail.mood.join(', ') + '<br>';
     detailString += 'waterRetention: ' + detail.waterRetention.join(', ') + '<br>';
     detailString += 'constipation: ' + detail.constipation.join(', ') + '<br>';
     detailString += 'acnes: ' + detail.acnes.join(', ') + '<br>';
     detailString += 'cramp: ' + detail.cramp + '<br>';
     //check for brainfog with formatting
+
   } else if ('brainFog' in detail) {
     detailString += 'mood: ' + detail.mood.join(', ') + '<br>';
     detailString += 'waterRetention: ' + detail.waterRetention.join(', ') + '<br>';
@@ -246,8 +249,8 @@ function checkStage() {
     // and we got a if else entry here to check if we want to show other text elements
    //each of the stage will result in different output for the displaying text
 
-    if (currentDay >= 0 && currentDay <= 2) {
-    
+    if (currentDay >= 0 && currentDay <= 5) {
+    //if the input is between 0-5 which indicate the stage of menstural stage and text 1 will change from display none to block with corresponding images
       let text1Element = document.querySelector(".text1");
       text1Element.style.display = "block";
       divElements.forEach((div) => {
@@ -255,25 +258,20 @@ function checkStage() {
       });
 
 
-    } else if (currentDay >= 3 && currentDay <= 7) {
-
-
+    } else if (currentDay >= 6 && currentDay <= 9) {
       let text2Element = document.querySelector(".text2");
       text2Element.style.display = "block";
       foparentElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
 
       });
-    } else if (currentDay >= 8 && currentDay <= 11) {
-
-
+    } else if (currentDay >= 10 && currentDay <= 13) {
       let text3Element = document.querySelector(".text3");
       text3Element.style.display = "block";
       oparentElements.forEach((div) => {
         div.querySelector("img").style.display = "block";
       });
-    } else if (currentDay >= 12 && currentDay <= 26) {
-
+    } else if (currentDay >= 14 && currentDay <= 26) {
       let text4Element = document.querySelector(".text4");
       text4Element.style.display = "block";
       luparentElements.forEach((div) => {
